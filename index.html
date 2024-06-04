@@ -4,9 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Edward Magdaraog - Portfolio</title>
-
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/text-effect.css">
@@ -14,14 +12,12 @@
     <link rel="stylesheet" href="style/projects.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/scroll-to-top.css">
-
-
+    <link rel="stylesheet" href="style/logo-slider.css">
+    <link rel="stylesheet" href="style/scroll-to-discover.css">
     <link rel="stylesheet" href="mediaqueries/mediaqueries.css">
-
 </head>
 
 <body>
-
     <div class="wrap">
         <header>
             <div class="logo">
@@ -31,7 +27,6 @@
                     </div>
                 </div>
             </div>
-
             <nav>
                 <a href="#" class="menu-open hide-desktop">
                     <img src="assets/menu-nav.svg" alt="Open menu">
@@ -51,27 +46,27 @@
 
         <main>
             <div class="profile-text-and-buttons">
-            <div class="hero-section">
-                <div>
-                    <ul>
-                        <li><a>Online</a></li>
+                <div class="hero-section">
+                    <div>
+                        <ul>
+                            <li><a>Online</a></li>
+                    </div>
+                    
+                    <h1 class="profile-title">Front-End Developer & UI/UX&nbsp;Designer</h1>
+
+                    <div class="divider"></div>
+
+                    <p class="title-subhead">
+                        Hello World!👋🏻, I’m Edward. 
+                        I'm passionate about designing and I enjoy developing. I love to explore!
+                    </p>
                 </div>
-                
-                <h1 class="profile-title">Front-End Developer & UI/UX&nbsp;Designer</h1>
-
-                <div class="divider"></div>
-
-                <p class="title-subhead">
-                    Hello World!👋🏻, I’m Edward. 
-                    I'm passionate about designing and I enjoy developing. I love to explore!
-                </p>
-            </div>
                 <div class="btn-container">
                     <button class="btn btn-color" onclick="window.open('./assets/MAGDARAOG_RESUME.pdf')">Download CV</button>
                     <button class="btn btn-color" onclick="location.href='./#contact'">Contact Info</button>
                 </div>
             </div>
-            
+                <div class="scroll-down"></div>
         </main>
     </div>
 
@@ -90,7 +85,6 @@
     </section>
 
     
-
     <section id="about">
         <div>
             <p class="section__text__p1">Get To Know More</p>
@@ -136,7 +130,42 @@
                 <img src="./assets/skills-icon.svg" alt="Skills icon" class="skills-icon" />
                 <h3>Skills</h3>
             </div>
-            <div class="skills-list">
+
+            <div class="logos">
+                <div class="logos-slide">
+                  <img src="assets/logos/android-studio.svg" />
+                  <img src="assets/logos/css.svg" />
+                  <img src="assets/logos/figma.svg" />
+                  <img src="assets/logos/github.svg" />
+                  <img src="assets/logos/html.svg" />
+                  <img src="assets/logos/illustrator.svg" />
+                  <img src="assets/logos/kotlin.svg" />
+                  <img src="assets/logos/mySql.svg" />
+                  <img src="assets/logos/photoshop.svg" />
+                  <img src="assets/logos/phpMyAdmin.svg" />
+                  <img src="assets/logos/postman.svg" />
+                  <img src="assets/logos/sqlite.svg" />
+                  <img src="assets/logos/vscode.svg" />
+                  <img src="assets/logos/xampp.svg" />
+                </div>
+                <div class="logos-slide">
+                    <img src="assets/logos/android-studio.svg" />
+                    <img src="assets/logos/css.svg" />
+                    <img src="assets/logos/figma.svg" />
+                    <img src="assets/logos/github.svg" />
+                    <img src="assets/logos/html.svg" />
+                    <img src="assets/logos/illustrator.svg" />
+                    <img src="assets/logos/kotlin.svg" />
+                    <img src="assets/logos/mySql.svg" />
+                    <img src="assets/logos/photoshop.svg" />
+                    <img src="assets/logos/phpMyAdmin.svg" />
+                    <img src="assets/logos/postman.svg" />
+                    <img src="assets/logos/sqlite.svg" />
+                    <img src="assets/logos/vscode.svg" />
+                    <img src="assets/logos/xampp.svg" />
+                </div>
+              </div>
+            <!-- <div class="skills-list">
                 <div class="skills-body-container">
                     <h1>Programming Language:</h1>
                     <p>Kotlin</p>
@@ -161,13 +190,9 @@
                     <h1>Project Management:</h1>
                     <p>Github</p>
                 </div>
-            </div>
+            </div> -->
         </div>  
 </section>
-
-
-
-
 
 <section id="projects">
     <div>
@@ -246,14 +271,6 @@
     
 </footer>
 
-
-
-
-
-
-
-
-
 <div id="scrollToTop" class="scroll-to-top">
     <img src="assets/arrow-up-icon.svg" alt="Scroll to top">
 </div>
@@ -299,6 +316,10 @@
             behavior: 'smooth'
         });
     });
+
+    // logo slider
+    var copy = document.querySelector(".logos-slide").cloneNode(true);
+    document.querySelector(".logos").appendChild(copy);
 
     </script>
 
