@@ -1,0 +1,99 @@
+#about {
+    height: fit-content;
+    align-content: center;
+    /* top left bottom right */
+    padding: 32px 24px 32px 24px;
+    /* vertical gap between items */
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .skills-body-container {
+    display: flex;
+    gap: 8px;
+  }
+  
+  .skills-body-container h1 {
+    font-size: 15px;
+  }
+  
+  .skills-body-container p {
+    text-align: start;
+  }
+  
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .about-title,
+  .projects-title,
+  .contacts-title {
+    text-align: center;
+  }
+  
+  .about-pic {
+    border-radius: 2rem;
+  }
+  
+  .arrow {
+    position: absolute;
+    right: -5rem;
+    bottom: 2.5rem;
+  }
+  
+  .education-details-container {
+    padding: 16px;
+    border-radius: 16px;
+    border: 0.1rem solid;
+    border-color: rgb(85, 85, 85);
+    text-align: center;
+    display: flex;
+    /* Set the direction to column for vertical layout */
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .experience-details-container {
+    padding: 16px;
+    border-radius: 16px;
+    border: 0.1rem solid;
+    border-color: rgb(85, 85, 85);
+    text-align: center;
+    display: flex;
+    /* Set the direction to column for vertical layout */
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .skills-details-container {
+    padding: 16px;
+    border-radius: 16px;
+    border: 0.1rem solid;
+    border-color: rgb(85, 85, 85);
+    text-align: center;
+    display: flex;
+    /* Set the direction to column for vertical layout */
+    flex-direction: column;
+    gap: 22px;
+  }
+  
+  .section-container {
+    gap: 4rem;
+    height: 80%;
+  }
+  
+  .section__pic-container {
+    height: 400px;
+    width: 400px;
+    margin: auto 0;
+  }
+  
+  .section__text__p1 {
+    text-align: center;
+  }
+  
+  .text-container p{
+    text-align: justify;
+  }
