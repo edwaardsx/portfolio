@@ -5,10 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edward Magdaraog - Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <!-- .space-mono-regular {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-style: normal;
+      }
+      
+      .space-mono-bold {
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-style: normal;
+      }
+      
+      .space-mono-regular-italic {
+        font-family: "Space Mono", monospace;
+        font-weight: 400;
+        font-style: italic;
+      }
+      
+      .space-mono-bold-italic {
+        font-family: "Space Mono", monospace;
+        font-weight: 700;
+        font-style: italic;
+      } -->
+
     <link rel="stylesheet" href="style/general.css">
     <link rel="stylesheet" href="style/main.css">
     <link rel="stylesheet" href="style/text-effect.css">
     <link rel="stylesheet" href="style/about.css">
+    <link rel="stylesheet" href="style/timeline.css">
     <link rel="stylesheet" href="style/projects.css">
     <link rel="stylesheet" href="style/footer.css">
     <link rel="stylesheet" href="style/scroll-to-top.css">
@@ -20,15 +50,19 @@
 <body>
     <div class="wrap">
         <header>
-            <div class="logo">
-                <div href="index.html">
-                    <div class="logo-section">
-                        Portfolio
-                    </div>
+            <div class="header-left">
+                <div class="logo">
+                    <img src="assets/portfolio-logo.svg" alt="Portfolio Logo">
+                </div>
+
+                <div class="logo-section">
+                    Portfolio
                 </div>
             </div>
+
             <nav>
-                <a href="#" class="menu-open hide-desktop">
+                
+                <a  class="menu-open hide-desktop">
                     <img src="assets/menu-nav.svg" alt="Open menu">
                 </a>
                 <ul>
@@ -41,33 +75,47 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
+                <button class="btn btn-color" onclick="window.open('./assets/MAGDARAOG_RESUME.pdf')">Resume&nbsp;PDF</button>
             </nav>
         </header>
 
         <main>
-            <div class="profile-text-and-buttons">
-                <div class="hero-section">
+            <div class="hero-section">
+                <div class="title">
                     <div>
                         <ul>
                             <li><a>Online</a></li>
                     </div>
-                    
-                    <h1 class="profile-title">Front-End Developer & UI/UX&nbsp;Designer</h1>
-
-                    <div class="divider"></div>
-
-                    <p class="title-subhead">
-                        Hello World!👋🏻, I’m Edward. 
-                        I'm passionate about designing and I enjoy developing. I love to explore!
-                    </p>
+                    <h1 class="profile-title">UX/UI Designer and
+                        <br class="line-break"> 
+                        Front-End Developer.</h1>
                 </div>
-                <div class="btn-container">
-                    <button class="btn btn-color" onclick="window.open('./assets/MAGDARAOG_RESUME.pdf')">Download CV</button>
-                    <button class="btn btn-color" onclick="location.href='./#contact'">Contact Info</button>
+                
+
+                <div class="divider"></div>
+
+                <p class="title-subhead">
+                    Hello World!👋🏻, 
+                    I’m Edward Magdaraog. I am passionate about designing a mobile and web application. 
+                    I love to create simple and beautiful designs to make user experiences delightful and intuitive.
+                </p>
+
+                <div class="get-in-touch" data-email="edwaaaaardsedward@gmail.com">
+                    <div class="logo">
+                        <img src="assets/arrow-right.svg" alt="Arrow Right">
+                    </div>
+    
+                    <div class="arrow-text" id="arrowText">
+                        Get in touch
+                    </div>
                 </div>
             </div>
-                <div class="scroll-down"></div>
+                <!-- <div class="btn-container">
+                    <button class="btn btn-color" onclick="window.open('./assets/MAGDARAOG_RESUME.pdf')">Download CV</button>
+                    <button class="btn btn-color" onclick="location.href='./#contact'">Contact Info</button>
+                </div> -->
         </main>
+        <div class="scroll-down"></div>
     </div>
 
 
@@ -84,16 +132,35 @@
         </div>
     </section>
 
-    
     <section id="about">
-        <div>
+
+        <div class="title-title">
+            <div class="logo">
+                <img src="assets/title-arrow.svg" alt="Title Arrow">
+            </div>
+
+            <div class="about-title">
+                About Me
+            </div>
+        </div>
+
+
+        <!-- <div>
             <p class="section__text__p1">Get To Know More</p>
             <h1 class="about-title">About Me</h1>
-        </div>
+        </div> -->
             
         <div class="about-details-container">
             <div class="text-container">
+                <img src="assets/about-pic.png" alt="About Pic">
                 <p>
+                    I started college in 2015, and everything was fine until the pandemic hit.
+                    When the pandemic began, I stopped for over two years,
+                    even though I only had my OJT and thesis capstone left.
+                    The hardest part was that my previous group members were no longer available to continue,
+                    so I struggled to find a new group for the capstone. I tried reaching out to my former group members;
+                    one didn’t respond, and the other had started a family. I also stopped due to my mental health issues.
+                    <br><br>
                     During pandemic, I developed my skills as a graphics designer, 
                     developing different logos for my clients, 
                     and I do business in t-shirt printing, stickers, and decals. 
@@ -103,117 +170,266 @@
                     about designing web and mobile applications. Even during college, 
                     my role in group projects was consistently focused on UI/UX 
                     design and front-end developer.
+                    <br><br>
+                    Then, I resumed my studies in September 2022,
+                    starting immediately with my OJT since programming was required.
+                    I chose to become an app developer, and luckily, I finished it within three months.
+                    After that, I began my capstone project and found a group since the school grouped students without existing groups.
+                    Fortunately, we completed the capstone by July 2023. I was thrilled because I had finally finished everything. However,
+                    there was a problem. Although I had completed all my subjects, I only had a week left to prepare for graduation, and at that time,
+                    I had only enrolled in Capstone 1. I believed that I could take Capstone 2 without enrolling,
+                    as I thought it was dissolved due to low enrollment. I assumed that once I finished both Capstone 1 and 2,
+                    I would receive a grade immediately upon enrolling, but I was wrong. It turns out that I needed to complete
+                    an entire semester to get a grade. Therefore, I had no choice but to wait for the whole semester to finish to receive my grade,
+                    causing me to miss the graduation deadline.
+                    <br><br>
+                    Now, it’s 2024, and all my grades are in order,
+                    but I couldn't start working right away because I needed to fix my documents.
+                    My birth certificate had an incorrect middle name, so I fixed it in October 2023.
+                    It took another three months for the process to complete, and by February 2024, my birth certificate was corrected.
+                    Then, I started processing my SSS, PhilHealth, and Pag-IBIG, along with my graduation clearance.
+                    While waiting for everything to be processed and not wanting to waste time, I started learning Figma,
+                    which is essential for a UX/UI designer and web portfolio. I also began developing my web portfolio.
+                    Now, I am set to graduate this coming September.
                 </p>
             </div>
         </div>
-        
-        <div class="education-details-container">
-            <div class="education-title-container">
-                <img src="./assets/education-icon.svg" alt="Education icon" class="education-icon" />
-                <h3>Education</h3>
+
+        <div class="title-title">
+            <div class="logo">
+                <img src="assets/title-arrow.svg" alt="Title Arrow">
             </div>
-            <div class="education-body-container">
-                <p>Bachelor of Science in Information Technology<br/>Technological Institute of the Philippines (QC)</p>
+
+            <div class="about-title">
+                Education
             </div>
         </div>
-        <div class="experience-details-container">
-            <div class="experience-title-container">
-                <img src="./assets/experience-icon.svg" alt="Experience icon" class="experience-icon" />
-                <h3>Experience</h3>
+
+        <div class="timeline">
+            <div class="container left-container">
+                <img src="assets/circle.svg">
+                <div class="text-box">
+                    <small>2004 - 2009</small>
+                    <h3>Concepcion Elementary<br>School</h3>
+                    <!-- <p>J. Molina St, Marikina, 1850 Metro Manila</p> -->
+                </div>
             </div>
-            <div class="experience-body-container">
-                <p>Graphics Design<br/>Freelancing</p>
+    
+            <div class="container right-container">
+                <img src="assets/circle.svg">
+                <div class="text-box">
+                    <small>2009 - 2015</small>
+                    <h3>Marikina High School</h3>
+                    <!-- <p>97 E Santos, St, Marikina, 1800 Metro Manila</p> -->
+                </div>
             </div>
-        </div>  
-        <div class="skills-details-container">
+    
+            <div class="container left-container">
+                <img src="assets/circle.svg">
+                <div class="text-box">
+                    <small>2015 - 2023</small>
+                    <h3>Technological Institute<br>of the Philippines</h3>
+                    <!-- <p>938 Aurora Blvd, Cubao, Quezon City, 1109 Metro Manila</p> -->
+                </div>
+            </div>
+        </div>
+
+        <div class="title-title">
+            <div class="logo">
+                <img src="assets/title-arrow.svg" alt="Title Arrow">
+            </div>
+
+            <div class="about-title">
+               Skills
+            </div>
+        </div>
+
+        <div class="skills-list">
+            <div class="skills-body-container">
+                <h3>Programming Language:</h3>
+                <!-- <div class="divider"></div> -->
+                <p>Kotlin</p>
+            </div>
+            <div class="skills-body-container">
+                <h3>Front End Stack:</h3>
+                <p>HTML, CSS, Javascript</p>
+            </div>
+            <div class="skills-body-container">
+                <h3>Databases:</h3>
+                <p>SQLite, MySQL, phpMyAdmin</p>
+            </div>
+            <div class="skills-body-container">
+                <h3>Microsoft&nbsp;Ofiice:</h3>
+                <p>Word, Excel and Powerpoint</p>
+            </div>
+            <div class="skills-body-container">
+                <h3>Project Management:</h3>
+                <p>Github</p>
+            </div>
+            <div class="skills-body-container">
+                <h3>Software:</h3>
+                <p>Android Studio, Visual Studio Code, XAMPP Control Panel, Postman, Photoshop, Adobe Ilustrator and Figma</p>
+            </div>
+        </div>
+
+        <!-- <div class="skills-details-container">
             <div class="skills-title-container">
                 <img src="./assets/skills-icon.svg" alt="Skills icon" class="skills-icon" />
                 <h3>Skills</h3>
             </div>
+            
+        </div>   -->
 
-            <div class="logos">
-                <div class="logos-slide">
-                  <img src="assets/logos/android-studio.svg" />
-                  <img src="assets/logos/css.svg" />
-                  <img src="assets/logos/figma.svg" />
-                  <img src="assets/logos/github.svg" />
-                  <img src="assets/logos/html.svg" />
-                  <img src="assets/logos/illustrator.svg" />
-                  <img src="assets/logos/kotlin.svg" />
-                  <img src="assets/logos/mySql.svg" />
-                  <img src="assets/logos/photoshop.svg" />
-                  <img src="assets/logos/phpMyAdmin.svg" />
-                  <img src="assets/logos/postman.svg" />
-                  <img src="assets/logos/sqlite.svg" />
-                  <img src="assets/logos/vscode.svg" />
-                  <img src="assets/logos/xampp.svg" />
-                </div>
-                <div class="logos-slide">
-                    <img src="assets/logos/android-studio.svg" />
-                    <img src="assets/logos/css.svg" />
-                    <img src="assets/logos/figma.svg" />
-                    <img src="assets/logos/github.svg" />
-                    <img src="assets/logos/html.svg" />
-                    <img src="assets/logos/illustrator.svg" />
-                    <img src="assets/logos/kotlin.svg" />
-                    <img src="assets/logos/mySql.svg" />
-                    <img src="assets/logos/photoshop.svg" />
-                    <img src="assets/logos/phpMyAdmin.svg" />
-                    <img src="assets/logos/postman.svg" />
-                    <img src="assets/logos/sqlite.svg" />
-                    <img src="assets/logos/vscode.svg" />
-                    <img src="assets/logos/xampp.svg" />
-                </div>
-              </div>
-            <!-- <div class="skills-list">
-                <div class="skills-body-container">
-                    <h1>Programming Language:</h1>
-                    <p>Kotlin</p>
-                </div>
-                <div class="skills-body-container">
-                    <h1>Front-End Developing:</h1>
-                    <p>HTML, CSS</p>
-                </div>
-                <div class="skills-body-container">
-                    <h1>Database:</h1>
-                    <p>SQLite, MySQL, phpMyAdmin</p>
-                </div>
-                <div class="skills-body-container">
-                    <h1>Software:</h1>
-                    <p>Android Studio, VS Code, XAMPP Control Panel, Postman, Photoshop, Adobe Ilustrator, Figma</p>
-                </div>
-                <div class="skills-body-container">
-                    <h1>Microsoft&nbsp;Ofiice:</h1>
-                    <p>Word, Excel and Powerpoint</p>
-                </div>
-                <div class="skills-body-container">
-                    <h1>Project Management:</h1>
-                    <p>Github</p>
-                </div>
-            </div> -->
-        </div>  
-</section>
+        <!-- <div class="title-title">
+            <div class="logo">
+                <img src="assets/title-arrow.svg" alt="Title Arrow">
+            </div>
+
+            <div class="about-title">
+               Technology
+            </div>
+        </div> -->
+
+        <div class="logos">
+            <div class="logos-slide">
+              <img src="assets/logos/android-studio.svg" />
+              <img src="assets/logos/css.svg" />
+              <img src="assets/logos/figma.svg" />
+              <img src="assets/logos/github.svg" />
+              <img src="assets/logos/html.svg" />
+              <img src="assets/logos/illustrator.svg" />
+              <img src="assets/logos/kotlin.svg" />
+              <img src="assets/logos/mySql.svg" />
+              <img src="assets/logos/photoshop.svg" />
+              <img src="assets/logos/phpMyAdmin.svg" />
+              <img src="assets/logos/postman.svg" />
+              <img src="assets/logos/sqlite.svg" />
+              <img src="assets/logos/vscode.svg" />
+              <img src="assets/logos/xampp.svg" />
+            </div>
+            <div class="logos-slide">
+                <img src="assets/logos/android-studio.svg" />
+                <img src="assets/logos/css.svg" />
+                <img src="assets/logos/figma.svg" />
+                <img src="assets/logos/github.svg" />
+                <img src="assets/logos/html.svg" />
+                <img src="assets/logos/illustrator.svg" />
+                <img src="assets/logos/kotlin.svg" />
+                <img src="assets/logos/mySql.svg" />
+                <img src="assets/logos/photoshop.svg" />
+                <img src="assets/logos/phpMyAdmin.svg" />
+                <img src="assets/logos/postman.svg" />
+                <img src="assets/logos/sqlite.svg" />
+                <img src="assets/logos/vscode.svg" />
+                <img src="assets/logos/xampp.svg" />
+            </div>
+          </div>
+    </section>
+
+
+    
+
 
 <section id="projects">
-    <div>
+    <div class="title-title">
+        <div class="logo">
+            <img src="assets/title-arrow.svg" alt="Title Arrow">
+        </div>
+
+        <div class="about-title">
+            Recent Projects
+        </div>
+    </div>
+    <!-- <div>
         <p class="section__text__p1">Browse My Recent</p>
         <h1 class="about-title">Projects</h1>
-    </div>
+    </div> -->
     <div class="project-details-container">
-        <div class="project-image">
+        <div class="project-title">
+            <div class="project-title-container">
+                <img src="assets/cakephp3.svg" alt="Title Arrow">
+                <h3>CakePHP 3 Website</h3>
+            </div>
+            <small>Sept - Oct, 2022</small>
+        </div>
+        
+        <div class="divider"></div>
+        <p>This website application, built with CakePHP 3 and managed via Composer, 
+            features comprehensive CRUD functionality, 
+            enabling users to create, read, update, and delete records efficiently. 
+            Integrated with a database managed through XAMPP Control Panel and phpMyAdmin.</p>
+        <!-- <div class="project-image">
             <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
         </div>
         <div>
             <h3 class="project-title">Cake PHP 3</h3>
             <p>A web application with CRUD functionality using CakePHP3 and Composer.</p>
-        </div>
+        </div> -->
         <div class="btn-container">
             <button class="btn btn-color" onclick="location.href='https://github.com/edwaardsx/cakephp-3'">Github</button>
-            <button class="btn2 " onclick="location.href='./#contact'">Demo</button>
+            <button class="btn2 " onclick="location.href='./#contact'">Design</button>
         </div>
     </div>
 
     <div class="project-details-container">
+        <div class="project-title">
+            <div class="project-title-container">
+                <img src="assets/rest-api.svg" alt="Title Arrow">
+                <h3>REST API: Mobile Application</h3>
+            </div>
+            <small>Oct - Dec, 2022</small>
+        </div>
+        
+        <div class="divider"></div>
+        <p>This mobile application fetches data from a CakePHP 3 backend and implements CRUD operations using the MVVM architecture.
+            It leverages HttpURLConnection for data download and upload, ensuring seamless communication with the server.
+            The application incorporates LiveData and dataBinding to manage UI-related data in a lifecycle-conscious way,
+            enhancing efficiency and responsiveness. Robust error handling is facilitated through stackTrace,
+            and the application undergoes rigorous testing, including Local Unit Tests, Instrumentation Tests, and UI Tests,
+            ensuring reliability and performance across different scenarios.</p>
+        <!-- <div class="project-image">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+        </div>
+        <div>
+            <h3 class="project-title">Cake PHP 3</h3>
+            <p>A web application with CRUD functionality using CakePHP3 and Composer.</p>
+        </div> -->
+        <div class="btn-container">
+            <button class="btn btn-color" onclick="location.href='https://github.com/edwaardsx/cakephp-3'">Github</button>
+            <button class="btn2 " onclick="location.href='./#contact'">Design</button>
+        </div>
+    </div>
+
+    <div class="project-details-container">
+        <div class="project-title">
+            <div class="project-title-container">
+                <img src="assets/mathuto.svg" alt="Title Arrow">
+                <h3>Mathuto: Mobile Learning Application</h3>
+            </div>
+            <small>Jan - July, 2023</small>
+        </div>
+        
+        <div class="divider"></div>
+        <p>Mathuto is a mobile learning application designed exclusively for grade 6 students at Ampid 1 Elementary School.
+            It includes comprehensive modules and lessons with clear learning objectives,
+            enriched with engaging pictures and explanatory text. The app features interactive simulations,
+            tutorial videos, and text-to-speech functionality to cater to various learning styles.
+            Quizzes are integrated to reinforce learning and assess student progress,
+            making education both interactive and effective.</p>
+        <!-- <div class="project-image">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+        </div>
+        <div>
+            <h3 class="project-title">Cake PHP 3</h3>
+            <p>A web application with CRUD functionality using CakePHP3 and Composer.</p>
+        </div> -->
+        <div class="btn-container">
+            <button class="btn btn-color" onclick="location.href='https://github.com/edwaardsx/cakephp-3'">Github</button>
+            <button class="btn2 " onclick="location.href='./#contact'">Design</button>
+        </div>
+    </div>
+
+    <!-- <div class="project-details-container">
         <div class="project-image">
             <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
         </div>
@@ -225,9 +441,9 @@
             <button class="btn btn-color" onclick="location.href='https://github.com/edwaardsx/cakephp-3'">Github</button>
             <button class="btn2" onclick="location.href='./#contact'">Demo</button>
         </div>
-    </div>
+    </div> -->
 
-    <div class="project-details-container">
+    <!-- <div class="project-details-container">
         <div class="project-image">
             <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
         </div>
@@ -239,7 +455,7 @@
             <button class="btn btn-color" onclick="location.href='https://github.com/edwaardsx/cakephp-3'">Github</button>
             <button class="btn2" onclick="location.href='./#contact'">Demo</button>
         </div>
-    </div>
+    </div> -->
 </section>
 
 <footer>
@@ -266,7 +482,8 @@
     </div>
     <div class="divider"></div>
       <div class="footer-c">
-        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Edward Magdaraog</p>
+        <p>&copy; 2024 Portfolio.</p>
       </div>
     
 </footer>
@@ -302,7 +519,7 @@
 
          // Show the button when the user scrolls down 100px from the top
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
+        if (window.scrollY > 3000) {
             scrollToTopBtn.style.display = 'flex';
         } else {
             scrollToTopBtn.style.display = 'none';
@@ -320,6 +537,33 @@
     // logo slider
     var copy = document.querySelector(".logos-slide").cloneNode(true);
     document.querySelector(".logos").appendChild(copy);
+
+
+    // Get In Touch
+    document.addEventListener('DOMContentLoaded', (event) => {
+    const getInTouch = document.querySelector('.get-in-touch');
+    const arrowText = document.getElementById('arrowText');
+    const email = getInTouch.getAttribute('data-email');
+
+    getInTouch.addEventListener('mouseover', () => {
+        arrowText.textContent = 'Copy Email?';
+    });
+
+    getInTouch.addEventListener('mouseout', () => {
+        arrowText.textContent = 'Get in touch';
+    });
+
+    getInTouch.addEventListener('click', () => {
+        navigator.clipboard.writeText(email).then(() => {
+            arrowText.textContent = 'Email Copied!';
+            setTimeout(() => {
+                arrowText.textContent = 'Get in touch';
+            }, 2000); // Change text back after 2 seconds
+        }).catch(err => {
+            console.error('Failed to copy email: ', err);
+        });
+    });
+});
 
     </script>
 

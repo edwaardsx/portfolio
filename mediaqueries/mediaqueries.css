@@ -1,63 +1,292 @@
-@media (min-width: 1024px) {
-    .hide-desktop {
-        display: none;
-    }
-    
-    nav ul {
-        position: unset;
-        background: none;
-        display: flex;
-        gap: 2em;
-        height: auto;
-        width: auto;
-        padding-right: 0;
-        /* padding-top: 0; */
-        
-        transform: translateX(0%);
-    
-        li a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-size: 1.5rem;
+/* Mobile Medium */
+@media (min-width: 320px) {
+  /* default */
+  nav {
+    flex-direction: row-reverse;
+  }
+}
 
-            &:hover {
-                color: rgb(209, 209, 209);
-                text-decoration: underline;
-                text-underline-offset: 1rem;
-                text-decoration-color: rgb(207, 207, 207);
-            }
+
+
+
+
+/* Mobile Large */
+@media (min-width: 425px) {
+  nav {
+    flex-direction: row-reverse;
+  }
+  /* .timeline {
+    margin: 50px auto;
+  } */
+  .profile-title {
+    font-size: 2rem;
+  }
+  
+  .profile-title {
+    font-size: 2.5rem;
+  }
+  .text-container p {
+    font-size: 1rem;
+  }
+  .skills-body-container {
+    font-size: 1rem;
+  }
+  .btn {
+    font-size: 1rem;
+  }
+  .title-subhead {
+    font-size: 1rem;
+  }
+  .arrow-text {
+    font-size: 1rem;
+  }
+  .content {
+    .text {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+
+
+
+
+/* Tablet */
+@media (min-width: 768px) {
+  header {
+    padding: 16px 138px;
+  }
+  nav {
+    flex-direction: row-reverse;
+  }
+  .profile-title {
+    font-size: 2.5rem;
+  }
+  .hero-section {
+    padding: 0 138px;
+  }
+  .btn {
+    padding: 15px 24px;
+    font-size: 1.2rem;
+    max-width: 120px;
+    border: rgb(85, 85, 85) 0.1rem solid;
+  }
+  .btn2 {
+    max-width: 120px;
+  }
+  .btn-container {
+    justify-content: flex-start;
+  }
+  .content {
+    .text {
+      font-size: 2.5rem;
+    }
+  }
+}
+
+
+
+
+
+/* Laptop 1024 */
+@media (min-width: 1024px) {
+  header {
+    padding: 0px 150px;
+}
+.logo-section {
+  font-size: 1.5rem;
+}
+.header-left img {
+  height: 24px;
+  width: 24px;
+}
+.hero-section {
+    padding: 0 150px;
+    gap: 40px;
+}
+nav {
+  gap: 2em;
+  flex-direction: row;
+}
+.btn {
+  padding: 15px 24px;
+  font-size: 1.2rem;
+  max-width: 120px;
+  border: rgb(85, 85, 85) 0.1rem solid;
+}
+.btn2 {
+  max-width: 120px;
+}
+.btn-container {
+  justify-content: flex-start;
+}
+a {
+  font-size: 15px;
+}
+.profile-title {
+  font-size: 3rem;
+}
+.title-subhead {
+  font-size: 1.125rem;
+}
+.get-in-touch img {
+  height: 22px;
+  width: 22px;
+  margin-top: 5px;
+}
+.arrow-text {
+  font-size: 22px;
+}
+.text-container {
+  flex-direction: row;
+
+  img {
+    height: 380px;
+    width: 292px;
+  }
+}
+.timeline::after {
+  left: 50%;
+}
+.container {
+  width: 50%;
+  padding-right: 50px;
+}
+.container img {
+  top: 41px;
+}
+.right-container {
+    left: 50%;
+}
+.right-container img {
+    left: -11px;
+}
+.left-container img {
+  left: 351px;
+}
+.skills-body-container h3 {
+  width: -webkit-fill-available;
+}
+.skills-list {
+  gap: 0;
+}
+.logos {
+  padding: 0;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: #000;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  
+    .text {
+      text-align: center;
+      font-size: 60px;
+      width: 100%;
+      padding: 0 144px;
+      color: white;
+      position: relative;
+  
+      .gradient {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+        background-color: #000;
+        mix-blend-mode: darken;
+        height: 100%;
+        top: 0;
+        left: 0;
+      }
+  
+      img {
+        width: 100%;
+      }
+    }
+  }
+  #about {
+    padding: 32px 150px;
+  }
+
+  .skills-body-container {
+    display: flex;
+    gap: 100px;
+  }
+
+  .skills-body-container h1 {
+    width: 320px;
+  }
+
+  #projects {
+    padding: 32px 150px;
+  }
+  footer {
+    padding: 32px 150px;
+  }
+.hide-desktop {
+    display: none;
+}
+nav ul {
+    position: unset;
+    background: none;
+    display: flex;
+    gap: 2em;
+    height: auto;
+    width: auto;
+    padding: 0;
+    /* padding-top: 0; */
+    
+    transform: translateX(0%);
+
+    li a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        font-size: 1.5rem;
+
+        &:hover {
+            color: rgb(209, 209, 209);
+            text-decoration: underline;
+            text-underline-offset: 1rem;
+            text-decoration-color: rgb(207, 207, 207);
         }
     }
 }
+}
 
+
+
+
+
+/* Laptop Large */
 @media (min-width: 1440px) {
-    .hide-desktop {
-        display: none;
-    }
+  header {
+    padding: 0px 300px;
+  }
+  .hero-section {
+    padding: 0px 300px;
+  }
+  .line-break {
+    display: block;
+  }
+  #about {
+    padding: 50px 300px;
+  }
+  .left-container {
+    left: 239px;
+  }
+  .left-container img {
+    left: 350px;
+  }
+  #projects {
+    padding: 50px 300px;
+  }
+}
 
-    nav ul {
-        position: unset;
-        background: none;
-        display: flex;
-        gap: 2em;
-        height: auto;
-        width: auto;
-        padding-right: 0;
-        /* padding-top: 0; */
-        
-        transform: translateX(0%);
-    
-        li a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            font-size: 1.5rem;
-
-            &:hover {
-                color: rgb(209, 209, 209);
-                text-decoration: underline;
-                text-underline-offset: 1rem;
-                text-decoration-color: rgb(207, 207, 207);
-            }
-        }
-    }
+@media (min-width: 2115px) {
+  .left-container {
+    left: 239px;
+  }
 }

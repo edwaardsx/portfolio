@@ -1,25 +1,32 @@
 #about {
     height: fit-content;
-    align-content: center;
+    /* align-content: center; */
     /* top left bottom right */
-    padding: 32px 24px 32px 24px;
+    padding: 16px;
     /* vertical gap between items */
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 50px;
+    
   }
   
-  .skills-body-container {
+  /* .skills-body-container {
     display: flex;
     gap: 8px;
-  }
+  } */
   
   .skills-body-container h1 {
-    font-size: 15px;
+    font-size: 1rem;
   }
   
   .skills-body-container p {
     text-align: start;
+    width: -webkit-fill-available;
+  }
+
+  .skills-list {
+    display: grid;
+    gap: 8px;
   }
   
   .about-details-container {
@@ -27,10 +34,13 @@
     flex-direction: column;
   }
   
-  .about-title,
-  .projects-title,
-  .contacts-title {
+  .about-title {
     text-align: center;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.7rem;
+    letter-spacing: -0.8px;
   }
   
   .about-pic {
@@ -93,7 +103,20 @@
   .section__text__p1 {
     text-align: center;
   }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
   
   .text-container p{
     text-align: justify;
+    /* font-size: 0.8rem; */
+  }
+
+  .text-container img {
+    height: auto;
+    width: 100%;
+    border-radius: 12px;
   }

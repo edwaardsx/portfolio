@@ -1,19 +1,14 @@
 #projects {
     height: fit-content;
     /* top left bottom right */
-    padding: 32px 24px 32px 24px;
+    padding: 16px;
     /* vertical gap between items */
     display: flex;
     flex-direction: column;
-    gap: 22px;
+    gap: 50px;
   }
   
   .project-details-container {
-    padding: 16px;
-    border-radius: 16px;
-    background-color: #EEEEEE;
-    text-align: center;
-    justify-content: center;
     display: flex;
     /* Set the direction to column for vertical layout */
     flex-direction: column;
@@ -22,21 +17,36 @@
   
   .project-img {
     border-radius: 12px;
-    width: 334px;
-    height: 300px;
+    width: 240px;
+    height: 220px;
   }
   
-  .project-title {
-    margin: 0;
-    color: black;
-  }
-
   .btn2 {
     color: black;
     font-weight: 600;
     transition: all 300ms ease;
-    padding: 1rem;
+    padding: 16px;
     width: 100%;
     border-radius: 16px;
-    border: rgb(85, 85, 85) 0.1rem solid;
+    border: #555555 0.2rem solid;
+    background: transparent;
+  }
+
+  .project-title-container {
+    display: flex;
+    gap: 8px;
+  }
+
+  .project-title {
+    text-align: start;
+  }
+
+  .project-title-container h3 {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .project-details-container p {
+    text-align: justify;
   }

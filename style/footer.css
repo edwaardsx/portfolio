@@ -1,13 +1,10 @@
 footer {
     background-color: rgb(31, 31, 31);
-    background-image: radial-gradient(#525050 1px, transparent 1px);
-    background-size: 50px 50px;
     height: fit-content;
     align-content: center;
     /* top left bottom right */
-    padding: 32px;
+    padding: 16px;
     
-  
     #contact {
         display: flex;
         flex-direction: column;
@@ -33,9 +30,15 @@ footer {
   .footer-title p {
     color: #555555;
   }
+
+  .footer-c {
+    display: flex;
+    justify-content: space-between;
+  }
   
   .footer-c p {
     color: #555555;
+    font-size: small;
   }
   
   .contact-info-container {

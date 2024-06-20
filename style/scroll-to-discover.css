@@ -1,10 +1,10 @@
 .scroll-down {
     height: 50px;
-    width: 30px;
+    width: 0px;
     /* border: 2px solid rgb(255, 255, 255); */
-    position: absolute;
-    left: 50%;
-    bottom: 50px;
+    position: relative;
+    left:50.5%;
+    bottom: 20px;
     border-radius: 50px;
     cursor: pointer;
   }

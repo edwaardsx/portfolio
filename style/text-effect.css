@@ -15,9 +15,9 @@
   
     .text {
       text-align: center;
-      font-size: 32px;
+      font-size: 2rem;
       width: 100%;
-      padding: 0 32px;
+      padding: 0 16px;
       color: white;
       position: relative;
   
