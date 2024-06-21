@@ -131,11 +131,11 @@ nav {
 }
 .btn {
   padding: 15px 24px;
-  max-width: 146.03px;
+  max-width: 165.23px;
   border: rgb(85, 85, 85) 0.1rem solid;
 }
 .btn2 {
-  max-width: 146.03px;
+  max-width: 165.23px;
 }
 .btn-container {
   justify-content: flex-start;
@@ -307,10 +307,10 @@ nav ul {
     left: 350px;
   }
   .btn {
-    max-width: 146.03px;
+    max-width: 165.23px;
   }
   .btn2 {
-    max-width: 146.03px;
+    max-width: 165.23px;
   }
   #projects {
     padding: 50px 300px;
