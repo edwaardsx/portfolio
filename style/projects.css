@@ -13,6 +13,9 @@
     /* Set the direction to column for vertical layout */
     flex-direction: column;
     gap: 22px;
+    /* padding: 24px;
+    background: gainsboro;
+    border-radius: 16px; */
   }
   
   .project-img {

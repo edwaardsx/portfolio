@@ -162,8 +162,7 @@
     color: transparent;
     font-size: 2rem;
     width: fit-content;
-    font-family: cocogoose;
-    font-weight: 400;
+    font-family: "cocogoose-regular", "Poppins";
 }
 
 .divider {
