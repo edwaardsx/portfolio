@@ -162,7 +162,7 @@
     color: transparent;
     font-size: 2rem;
     width: fit-content;
-    font-family: "cocogoose-regular", "Poppins";
+    font-family: "cocogoose-demibold", "cocogoose-regular";
 }
 
 .divider {
@@ -179,6 +179,15 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
+  }
+  
+  .nav-btn {
+    color: #ffffff;
+    /* font-weight: 600; */
+    transition: all 300ms ease;
+    padding: 16px;
+    width: 100%;
+    border-radius: 16px;
   }
 
   .btn {

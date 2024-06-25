@@ -5,6 +5,11 @@
   src: url(cocogoose-regular.ttf);
 }
 
+@font-face {
+  font-family: cocogoose-demibold;
+  src: url(cocogoose-demibold.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
