@@ -2,13 +2,6 @@
 
 Welcome to my personal portfolio website where I showcase my about me and projects.
 
-## Table of Contents
-- [About the Portfolio](#about-the-portfolio)
-- [Profile]
-- [About]
-- [Projects]
-- [Contact]
-
 ## About the Portfolio
 Hello World!👋🏻 I'm Edward, a UI/UX Designer with a passion for wireframing and designing. This portfolio showcases about me, projects, resume, and contact.
 
