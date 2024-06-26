@@ -53,12 +53,28 @@
 
 /* Tablet */
 @media (min-width: 768px) {
+  #about {
+    padding: 32px;
+  }
+  #projects {
+    padding: 32px;
+  }
+  footer {
+    padding: 32px;
+  }
   header {
     padding: 0 32px;
   }
   nav {
     flex-direction: row;
     gap: 2em;
+  }
+  .text-container {
+    flex-direction: row;
+  }
+  .text-container img {
+    height: fit-content;
+    width: 40%;
   }
   .logo-section {
     font-size: 1.4rem;
@@ -67,7 +83,7 @@
     font-size: 2.5rem;
   }
   .hero-section {
-    padding: 0 138px;
+    padding: 0 32px;
   }
   .nav-btn {
     font-size: 1rem;
@@ -116,8 +132,6 @@
     border-left: 15px solid antiquewhite;
     border-right: none;
   }
-
-
   .content {
     .text {
       font-size: 2.5rem;
@@ -152,7 +166,6 @@
         }
       }
     }
-
 }
 
 
@@ -164,9 +177,13 @@
 
 /* Laptop 1024 */
 @media (min-width: 1024px) {
+  footer #contact {
+    flex-direction: row;
+  }
   header {
     padding: 0px 150px;
   }
+
   .header-left img {
     height: 24px;
     width: 24px;
@@ -309,6 +326,9 @@
     max-width: 165.23px;
   }
   #projects {
+    padding: 50px 300px;
+  }
+  footer {
     padding: 50px 300px;
   }
 }
