@@ -27,7 +27,6 @@ h2,
 h3,
 p {
   margin: 0;
-  /* text-align: center; */
 }
 
 a {
@@ -43,4 +42,9 @@ a:hover {
   text-underline-offset: 1rem;
   text-decoration-color: rgb(207, 207, 207);
 }
+
+
+
+
+
 

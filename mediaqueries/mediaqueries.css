@@ -4,6 +4,31 @@
   nav {
     flex-direction: row-reverse;
   }
+  .hide-desktop {
+    display: block;
+  }
+  .title1 {
+    font-size: 3em;
+  }
+  .nav-btn {
+    display: inline-block;
+    padding: 12px 32px;
+    border: 0.16em solid rgb(255, 255, 255);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1rem;
+    color: #ffffff;
+    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
+    text-align: center;
+    transition: all 0.2s;
+  }
+  .btn-color {
+    border-color: #fff;
+    background: transparent;
+    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+}
 }
 
 
@@ -31,9 +56,6 @@
   .skills-body-container {
     font-size: 1rem;
   }
-  /* .btn {
-    font-size: 1rem;
-  } */
   .title-subhead {
     font-size: 1rem;
   }
@@ -69,6 +91,9 @@
     flex-direction: row;
     gap: 2em;
   }
+  .title1 {
+    font-size: 3em;
+  }
   .text-container {
     flex-direction: row;
   }
@@ -88,18 +113,9 @@
   .nav-btn {
     font-size: 1rem;
   }
-  .btn {
-    padding: 15px 24px;
-    max-width: 146.03px;
-    border: rgb(85, 85, 85) 0.1rem solid;
-  }
-  .btn2 {
-    max-width: 146.03px;
-  }
   .btn-container {
     justify-content: flex-start;
   }
-  
   .timeline {
     margin: 0;
   }
@@ -110,9 +126,6 @@
   .text-box {
     padding: 20px 30px;
   }
-  /* .container img {
-    right: -20px;
-  } */
   .right-container {
       left: 50%;
   }
@@ -137,7 +150,6 @@
       font-size: 2.5rem;
     }
   }
-
   .hide-desktop {
     display: none;
   }
@@ -183,7 +195,9 @@
   header {
     padding: 0px 150px;
   }
-
+  .title1 {
+    font-size: 4em;
+  }
   .header-left img {
     height: 24px;
     width: 24px;
@@ -195,14 +209,6 @@
   nav {
     gap: 2em;
     flex-direction: row;
-  }
-  .btn {
-    padding: 15px 24px;
-    max-width: 165.23px;
-    border: rgb(85, 85, 85) 0.1rem solid;
-  }
-  .btn2 {
-    max-width: 165.23px;
   }
   .btn-container {
     justify-content: flex-start;
@@ -298,6 +304,9 @@
   header {
     padding: 0px 300px;
   }
+  .title1 {
+    font-size: 6em;
+  }
   .hero-section {
     padding: 0px 300px;
   }
@@ -310,25 +319,10 @@
   #about {
     padding: 50px 300px;
   }
-  /* .left-container {
-    left: 239px;
-  }
-   .right-container {
-    left: 50%;
-  }
-  .left-container img {
-    left: 350px;
-  } */
-  .btn {
-    max-width: 165.23px;
-  }
-  .btn2 {
-    max-width: 165.23px;
-  }
   #projects {
     padding: 50px 300px;
   }
   footer {
-    padding: 50px 300px;
+    padding: 50px 600px;
   }
 }
