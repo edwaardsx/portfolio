@@ -4,17 +4,31 @@
   nav {
     flex-direction: row-reverse;
   }
+  /* header {
+    padding-right: 2em;
+  } */
   .hide-desktop {
     display: block;
   }
   .title1 {
-    font-size: 3em;
+    font-size: 2.7em;
+  }
+  .copy-medium {
+    font-size: 1em;
+  }
+  .gutter-outside {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+  .intro-description {
+    padding-top: 1em;
   }
   .nav-btn {
+    content: "ASDAS";
     display: inline-block;
-    padding: 12px 32px;
     border: 0.16em solid rgb(255, 255, 255);
     border-radius: 2em;
+    width: fit-content;
     box-sizing: border-box;
     text-decoration: none;
     font-weight: 300;
@@ -31,7 +45,19 @@
 }
 }
 
-
+@media (min-width: 375px) {
+  
+  /* .copy-medium {
+    font-size: 1em;
+  }
+  .gutter-outside {
+    padding-left: 1em;
+    padding-right: 5.5em;
+  }
+  .intro-description {
+    padding-top: 1em;
+  } */
+}
 
 
 
@@ -40,9 +66,7 @@
   nav {
     flex-direction: row-reverse;
   }
-  /* .timeline {
-    margin: 50px auto;
-  } */
+ 
   .profile-title {
     font-size: 2rem;
   }
@@ -94,6 +118,16 @@
   .title1 {
     font-size: 3em;
   }
+  .gutter-outside {
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+  .ultra-gradient-wrapper {
+    font-size: 1.4vh;
+  }
+  /* .main-shapes-wrapper, .blending-group-wrapper {
+    filter: blur(80px);
+  } */
   .text-container {
     flex-direction: row;
   }
@@ -291,7 +325,10 @@
     padding: 32px 150px;
   }
   footer {
-    padding: 32px 150px;
+    padding: 32px 250px;
+  }
+  .nav-btn {
+    padding 15px 32px;
   }
 }
 

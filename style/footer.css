@@ -2,7 +2,7 @@ footer {
   background-color: rgb(31, 31, 31);
   height: fit-content;
   align-content: center;
-  padding: 50px 500px;
+  padding: 16px;
   
   #contact {
       display: flex;
@@ -126,3 +126,4 @@ footer h1 {
   border-color: rgb(85, 85, 85);
   padding: 8px 12px 8px 12px;
 }
+

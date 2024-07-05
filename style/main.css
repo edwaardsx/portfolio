@@ -20,6 +20,7 @@
     align-items: center;
     height: 100vh;
     min-height: 45em;
+    width: 100%;
     display: flex;
     position: relative;
     overflow: hidden;
@@ -31,7 +32,11 @@
     align-items: flex-start;
     width: 100%;
     height: 100%;
-    font-size: 1vw;
+    /* web */
+    /* font-size: 1vw; */
+
+    /* mobile */
+    font-size: 1.3vh;
     position: absolute;
     top: 0%;
     bottom: 0%;
@@ -256,8 +261,9 @@
     bottom: auto;
     left: 0%;
     right: 0%;
-  
-    padding: 32px 300px;
+    padding: 16px;
+    /* web */
+    /* padding: 32px 300px; */
     width: -webkit-fill-available;
   }
   
@@ -390,12 +396,12 @@
     }
   }
 
-  header {
+  /* header {
     display: flex;
     justify-content:space-between;
     padding: 16px;
     width: -webkit-fill-available;
-  }
+  } */
   
   .header-left {
     margin: auto 0;
