@@ -3,12 +3,12 @@ footer {
   height: fit-content;
   align-content: center;
   padding: 75px 16px 75px 16px;
-  
-  #contact {
-      display: flex;
-      flex-direction: column;
-      gap: 22px;
-  }
+}
+
+#contact {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
 }
 
 footer .divider {
@@ -22,22 +22,13 @@ footer .divider {
   align-items: center;
 }
 
-footer h1 {
+footer h2 {
   color: #EEEEEE;
 }
 
 .footer-get-in-touch {
   margin-bottom: 22px;
 }
-
-/* .footer-about-us,
-.footer-address,
-.footer-contact {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  flex: 1;
-} */
 
 .footer-about-us,
 .footer-address {
@@ -53,9 +44,9 @@ footer h1 {
   max-width: 500px;
 }
 
-.footer-about-us h1,
-.footer-address h1,
-.footer-contact h1 {
+.footer-about-us h2,
+.footer-address h2,
+.footer-contact h2 {
   color: #FFFAF1;
 }
 

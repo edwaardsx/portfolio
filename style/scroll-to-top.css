@@ -10,7 +10,7 @@
     background-color: #333;
     border-radius: 50%;
     cursor: pointer;
-    display: none; /* Initially hidden */
+    display: none;
     z-index: 1000;
   }
   

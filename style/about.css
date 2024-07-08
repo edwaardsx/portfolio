@@ -1,19 +1,10 @@
 #about {
     height: fit-content;
-    /* align-content: center; */
-    /* top left bottom right */
     padding: 16px;
-    /* vertical gap between items */
     display: flex;
     flex-direction: column;
-    gap: 50px;
-    
+    gap: 22px;
   }
-  
-  /* .skills-body-container {
-    display: flex;
-    gap: 8px;
-  } */
   
   .skills-body-container h1 {
     font-size: 1rem;
@@ -39,7 +30,7 @@
     font-family: "Space Mono", monospace;
     font-weight: 700;
     font-style: normal;
-    font-size: 1.7rem;
+    font-size: 2rem;
     letter-spacing: -0.8px;
   }
   
@@ -60,7 +51,6 @@
     border-color: rgb(85, 85, 85);
     text-align: center;
     display: flex;
-    /* Set the direction to column for vertical layout */
     flex-direction: column;
     gap: 22px;
   }
@@ -72,7 +62,6 @@
     border-color: rgb(85, 85, 85);
     text-align: center;
     display: flex;
-    /* Set the direction to column for vertical layout */
     flex-direction: column;
     gap: 22px;
   }
@@ -84,7 +73,6 @@
     border-color: rgb(85, 85, 85);
     text-align: center;
     display: flex;
-    /* Set the direction to column for vertical layout */
     flex-direction: column;
     gap: 22px;
   }
@@ -100,8 +88,6 @@
     margin: auto 0;
   }
   
-
-
   .text-container {
     display: flex;
     flex-direction: column;
@@ -110,7 +96,6 @@
   
   .text-container p{
     text-align: justify;
-    /* font-size: 0.8rem; */
   }
 
   .text-container img {

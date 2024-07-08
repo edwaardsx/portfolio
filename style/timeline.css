@@ -1,15 +1,8 @@
 .timeline {
     position: relative;
-    /* max-width: 1200px; */
     margin: 0 auto;
     align-content: center; 
 }
-
-/* .container {
-    padding: 10px 50px;
-    position: relative;
-    width: 50%;
-} */
 
 .container {
     padding: 10px 50px;
@@ -19,10 +12,7 @@
 
 .text-box {
     padding: 0 15px;
-    /* background: #fff; */
     position: relative;
-    /* border-radius: 6px; */
-    /* font-size: 15px; */
     padding: 16px;
     background: antiquewhite;
     border-radius: 16px;
@@ -31,10 +21,6 @@
 .left-container {
     left: 0;
 }
-
-/* .right-container {
-    left: 50%;
-} */
 
 .right-container {
     left: 0;
@@ -53,14 +39,6 @@
     top: 44px;
     z-index: 10;
 }
-
-/* .right-container img {
-    left: -15px;
-} */
-
-/* .right-container img {
-    left: 20px;
-} */
 
 .timeline::after {
     content: '';

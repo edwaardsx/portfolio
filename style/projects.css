@@ -1,21 +1,15 @@
 #projects {
     height: fit-content;
-    /* top left bottom right */
-    padding: 16px 16px 50px 16px;
-    /* vertical gap between items */
+    padding: 50px 16px 50px 16px;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 22px;
   }
   
   .project-details-container {
     display: flex;
-    /* Set the direction to column for vertical layout */
     flex-direction: column;
     gap: 22px;
-    /* padding: 24px;
-    background: gainsboro;
-    border-radius: 16px; */
   }
   
   .project-img {
