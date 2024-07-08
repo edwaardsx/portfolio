@@ -2,7 +2,7 @@ footer {
   background-color: rgb(31, 31, 31);
   height: fit-content;
   align-content: center;
-  padding: 16px;
+  padding: 75px 16px 75px 16px;
   
   #contact {
       display: flex;
@@ -19,20 +19,25 @@ footer .divider {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  align-items: center;
 }
 
 footer h1 {
   color: #EEEEEE;
 }
 
-.footer-about-us,
+.footer-get-in-touch {
+  margin-bottom: 22px;
+}
+
+/* .footer-about-us,
 .footer-address,
 .footer-contact {
   display: flex;
   flex-direction: column;
   gap: 8px;
   flex: 1;
-}
+} */
 
 .footer-about-us,
 .footer-address {
@@ -45,6 +50,7 @@ footer h1 {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  max-width: 500px;
 }
 
 .footer-about-us h1,
@@ -86,12 +92,11 @@ footer h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  
   gap: 8px;
   padding: 15px 30px;
   font-size: 1rem;
   color: #fff;
-  background: dimgray;
+  background: #333;
   border: none;
   border-radius: 12px;
   cursor: pointer;
@@ -127,3 +132,22 @@ footer h1 {
   padding: 8px 12px 8px 12px;
 }
 
+.spikes {
+  position: relative;
+  background: #FFFAF1;
+  height: fit-content;
+}
+
+.spikes::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: -0%;
+  top: 100%;
+  z-index: 10;
+  display: block;
+  height: 50px;
+  background-size: 50px 100%;
+  background-image: linear-gradient(135deg, #FFFAF1 25%, transparent 25%), linear-gradient(225deg, #FFFAF1 25%, transparent 25%);
+  background-position: 0 0;
+}

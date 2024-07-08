@@ -1,12 +1,7 @@
-/* Mobile Medium */
 @media (min-width: 320px) {
-  /* default */
   nav {
     flex-direction: row-reverse;
   }
-  /* header {
-    padding-right: 2em;
-  } */
   .hide-desktop {
     display: block;
   }
@@ -23,45 +18,20 @@
   .intro-description {
     padding-top: 1em;
   }
-  .nav-btn {
-    content: "ASDAS";
-    display: inline-block;
-    border: 0.16em solid rgb(255, 255, 255);
-    border-radius: 2em;
-    width: fit-content;
-    box-sizing: border-box;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 1rem;
-    color: #ffffff;
-    text-shadow: 0 0.04em 0.04em rgba(255, 255, 255, 0.253);
-    text-align: center;
-    transition: all 0.2s;
+  .main-shapes-wrapper, .blending-group-wrapper {
+    filter: blur(80px);
   }
-  .btn-color {
-    border-color: #fff;
-    background: transparent;
-    transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
+  .ultra-gradient-wrapper {
+    font-size: 1.3vh;
+  }
 }
-}
+
 
 @media (min-width: 375px) {
-  
-  /* .copy-medium {
-    font-size: 1em;
-  }
-  .gutter-outside {
-    padding-left: 1em;
-    padding-right: 5.5em;
-  }
-  .intro-description {
-    padding-top: 1em;
-  } */
+
 }
 
 
-
-/* Mobile Large */
 @media (min-width: 425px) {
   nav {
     flex-direction: row-reverse;
@@ -95,9 +65,6 @@
 
 
 
-
-
-/* Tablet */
 @media (min-width: 768px) {
   #about {
     padding: 32px;
@@ -105,9 +72,9 @@
   #projects {
     padding: 32px;
   }
-  footer {
+  /* footer {
     padding: 32px;
-  }
+  } */
   header {
     padding: 0 32px;
   }
@@ -125,9 +92,6 @@
   .ultra-gradient-wrapper {
     font-size: 1.4vh;
   }
-  /* .main-shapes-wrapper, .blending-group-wrapper {
-    filter: blur(80px);
-  } */
   .text-container {
     flex-direction: row;
   }
@@ -143,9 +107,6 @@
   }
   .hero-section {
     padding: 0 32px;
-  }
-  .nav-btn {
-    font-size: 1rem;
   }
   .btn-container {
     justify-content: flex-start;
@@ -195,7 +156,6 @@
     height: auto;
     width: auto;
     padding: 0;
-    /* padding-top: 0; */
     
     transform: translateX(0%);
   
@@ -215,16 +175,11 @@
 }
 
 
-
-
-
-
-
-
-/* Laptop 1024 */
 @media (min-width: 1024px) {
   footer #contact {
-    flex-direction: row;
+    /* flex-direction: row; */
+    align-content: center;
+    display: block;
   }
   header {
     padding: 0px 150px;
@@ -314,6 +269,9 @@
   #about {
     padding: 32px 150px;
   }
+  .about-title {
+    font-size: 3rem;
+  }
   .skills-body-container {
     display: flex;
     gap: 100px;
@@ -324,22 +282,24 @@
   #projects {
     padding: 32px 150px;
   }
-  footer {
+  /* footer {
     padding: 32px 250px;
+  } */
+  /* .scroll-down {
+    top: 150px;
+  } */
+  .resume-btn {
+    padding: 16px 32px;
   }
-  .nav-btn {
-    padding 15px 32px;
+  .copy-medium {
+    font-size: 1.3em;
   }
 }
 
 
-
-
-
-/* Laptop Large */
 @media (min-width: 1440px) {
   header {
-    padding: 0px 300px;
+    padding: 0px 250px;
   }
   .title1 {
     font-size: 6em;
@@ -357,9 +317,12 @@
     padding: 50px 300px;
   }
   #projects {
-    padding: 50px 300px;
+    padding: 50px 300px 100px 300px;
   }
-  footer {
-    padding: 50px 600px;
-  }
+  /* footer {
+    padding: 100px 500px 50px 500px;
+  } */
+  /* .scroll-down {
+    top: 250px;
+  } */
 }

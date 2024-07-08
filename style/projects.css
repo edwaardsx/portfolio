@@ -1,7 +1,7 @@
 #projects {
     height: fit-content;
     /* top left bottom right */
-    padding: 16px;
+    padding: 16px 16px 50px 16px;
     /* vertical gap between items */
     display: flex;
     flex-direction: column;

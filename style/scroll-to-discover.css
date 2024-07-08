@@ -5,9 +5,8 @@
   /* border: 2px solid rgb(255, 255, 255); */
   position: relative;
   left:50%;
-  top: 180px;
+  bottom: 20px;
   border-radius: 50px;
-  cursor: pointer;
 }
 
 .scroll-down::before,
@@ -46,4 +45,18 @@
     top: 90%;
     opacity: 0;
   }
+}
+
+.lottie-scroll {
+  width: 40px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
+  display: block;
+  position: fixed;
+  top: auto;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
 }
