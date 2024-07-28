@@ -139,7 +139,10 @@
   }
   .text-event-container p {
     font-size: 1.4em;
-}
+  }
+  .event-info-location-container {
+    flex-direction: row;
+  }
   .hide-desktop {
     display: none;
   }
