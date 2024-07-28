@@ -134,6 +134,12 @@
   .content .text {
     font-size: 2.5rem;
   }
+  .event-title {
+    font-size: 2em;
+  }
+  .text-event-container p {
+    font-size: 1.4em;
+}
   .hide-desktop {
     display: none;
   }
@@ -297,6 +303,9 @@
     padding: 50px 300px;
   }
   #projects {
+    padding: 50px 300px 100px 300px;
+  }
+  #events {
     padding: 50px 300px 100px 300px;
   }
 }

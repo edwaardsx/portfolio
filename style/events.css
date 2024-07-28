@@ -1,0 +1,62 @@
+#events {
+    height: fit-content;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.event-container {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+    background-image: url('/assets/ux-plus-background-image.png');
+    object-fit: cover;
+    background-position: center;
+    border-radius: 16px;
+}
+
+.text-event-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-event-container p {
+    text-align: center;
+}
+
+.event-container img {
+    max-width: 250px;
+    max-height: 250px;
+    margin: 50px 0;
+}
+
+.event-title {
+    font-weight: bold;
+    /* color: #FFFAF1; */
+    /* font-size: 6em; */
+    /* font-family: "cocogoose-regular"; */
+}
+
+.event-info-location-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.events-going-container {
+    display: flex;
+    gap: 8px;
+    width: fit-content;
+    background: antiquewhite;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.events-going-container h3 {
+    width: fit-content;
+}

@@ -54,9 +54,9 @@
     transition: transform 0.3s ease-in-out;
   }
 
-  .project-details-container:hover {
+  /* .project-details-container:hover {
     transform: scale(1.05);
-  }
+  } */
 
   .project-title-container h3 {
     overflow: hidden;
@@ -68,7 +68,7 @@
     text-align: justify;
   }
 
-  .work-grid {
+  .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap: 50px;
